@@ -28,7 +28,8 @@ resetbtn.addEventListener("click", function () {
 });
 
 function startTimer() {
-    if (msec == 100) {
+    msec += 10;
+    if (msec == 1000) {
         msec = 0;
         secs++;
         if (secs == 60) {
